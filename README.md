@@ -6,21 +6,21 @@ This was a project for my CS201 Data Structures class. This project can generate
 
 This program can be run from any directory using the command line. First, compile the project using `make`. The executable is named **amaze**. The executable takes the following arguments:
 
--v                 gives author's name; the program exits
-                   immediately after the name is printed.
+-v                 *gives author's name; the program exits
+                   immediately after the name is printed.*
 
--s III OOO         solves the maze in file III placing
-                   the solution in file OOO.
+-s III OOO         *solves the maze in file III placing
+                   the solution in file OOO.*
 
--c RRR CCC MMM     creates a maze with RRR rows and CCC
-                   columns, placing the maze in file MMM.
+-c RRR CCC MMM     *creates a maze with RRR rows and CCC
+                   columns, placing the maze in file MMM.*
 
--r NNN             seeds a pseudo-random number generator
+-r NNN             *seeds a pseudo-random number generator
                    with NNN; if the -r option is not given,
-                   a random seed of 1 is used.
+                   a random seed of 1 is used.*
 
--d III             draws the created maze ( -c) or draws the
-                   solved maze ( -s) found in file III.
+-d III             *draws the created maze ( -c) or draws the
+                   solved maze ( -s) found in file III.*
 
 For example, to create a 5 x 7 cell maze and save it in file my_maze, enter `amaze -c 5 7 my_maze`. To see the solution to this maze, enter `amaze -s my_maze maze_solution`. Finally, to display a maze (either solved or unsolved), enter `amaze -d maze_solution`. Solved mazed are displayed with the steps taken in the bredth-first search algorithm used to solve them.
 
